@@ -1,5 +1,3 @@
-using System.Drawing.Text;
-
 namespace loginForm
 {
     public partial class Form1 : Form
@@ -7,13 +5,6 @@ namespace loginForm
         public Form1()
         {
             InitializeComponent();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            string username = usernameTxt.Text;
-            string password = passwordTxt.Text;
-            MessageBox.Show("Username: " + username + "\nPassword: " + password);
         }
 
         private void closeBtn_Click(object sender, EventArgs e)
@@ -26,11 +17,10 @@ namespace loginForm
             if (string.IsNullOrWhiteSpace(usernameTxt.Text) ||
                 string.IsNullOrWhiteSpace(passwordTxt.Text))
             {
-                MessageBox.Show("Please enter both username and password.");
+                MessageBox.Show("Please enter both username and password.", "Login");
                 return;
             }
-                MessageBox.Show("Welcome,"+ usernameTxt.Text + "! Login successful.");
-
+            MessageBox.Show("Login successful.", "Login");
 
             MenuForm menuForm = new MenuForm(this);
             menuForm.Show();

@@ -122,6 +122,7 @@
             // textBox1
             // 
             textBox1.BackColor = SystemColors.ButtonShadow;
+            textBox1.ReadOnly = true;
             textBox1.Location = new Point(324, 180);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(146, 21);

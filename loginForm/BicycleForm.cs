@@ -26,8 +26,12 @@ namespace loginForm
             }
 
             
-            int startingTime = Convert.ToInt32(startTimeTxt.Text);
-            int endingTime = Convert.ToInt32(endTimeTxt.Text);
+            if (!int.TryParse(startTimeTxt.Text.Trim(), out int startingTime) ||
+                !int.TryParse(endTimeTxt.Text.Trim(), out int endingTime))
+            {
+                MessageBox.Show("Please enter whole numbers for the starting and ending times.");
+                return;
+            }
 
             
             if (startingTime < 0 || startingTime > 23)

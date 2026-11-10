@@ -28,60 +28,6 @@ namespace loginForm
 
         private void revealMushroomBtn_Click(object sender, EventArgs e)
         {
-            /*
-              Console.Write("Does your mushroom grow in a forest? (yes/no): ");
-            growsInForest = Console.ReadLine().ToLower() == "yes";
-
-           
-            Console.Write("Does your mushroom have a convex cup? (yes/no): ");
-            hasConvexCup = Console.ReadLine().ToLower() == "yes";
-
-            if (growsInForest && hasConvexCup)
-            {
-               
-
-                Console.Write("Does your mushroom have a ring? (yes/no): ");
-                hasRing = Console.ReadLine().ToLower() == "yes";
-
-                if (hasRing)
-                {
-                    Console.WriteLine("Your mushroom is Amanite tue-mouche.");
-                }
-                else
-                {
-                    Console.WriteLine("Your mushroom is Pied bleu.");
-                }
-            }
-            else if (growsInForest && !hasConvexCup)
-            {
-                
-                Console.Write("Does your mushroom have gills? (yes/no): ");
-                hasGills = Console.ReadLine().ToLower() == "yes";
-
-                if (hasGills)
-                {
-                    Console.WriteLine("Your mushroom is Girolle.");
-                }
-                else
-                {
-                    Console.WriteLine("Your mushroom is Cepe de Bordeaux.");
-                }
-            }
-
-
-            
-            else if (!growsInForest && hasConvexCup)
-            {
-               
-                Console.WriteLine("Your mushroom is Agaric Jaunissant.");
-            }
-            else
-            {
-                Console.WriteLine("Your mushroom is Coprin Chevelu.");
-            }
-        }
-
-             */
             if ((!yesForest.Checked && !noForest.Checked) ||
                 (!yesConvex.Checked && !noConvex.Checked))
             {
