@@ -95,6 +95,7 @@
             passwordTxt.Name = "passwordTxt";
             passwordTxt.Size = new Size(201, 21);
             passwordTxt.TabIndex = 6;
+            passwordTxt.UseSystemPasswordChar = true;
             // 
             // Form1
             // 
@@ -110,7 +111,7 @@
             Controls.Add(closeBtn);
             Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Login";
             ResumeLayout(false);
             PerformLayout();
         }

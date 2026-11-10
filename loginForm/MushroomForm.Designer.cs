@@ -301,7 +301,7 @@
             Controls.Add(label1);
             Margin = new Padding(3, 2, 3, 2);
             Name = "MushroomForm";
-            Text = "MushroomFormcs";
+            Text = "Mushroom Guessing";
             Load += MushroomForm_Load;
             forestBox.ResumeLayout(false);
             forestBox.PerformLayout();
